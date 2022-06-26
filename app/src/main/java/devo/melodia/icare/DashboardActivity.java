@@ -105,7 +105,7 @@ public class DashboardActivity extends AppCompatActivity {
                             NotificationManagerCompat managerCompat = NotificationManagerCompat.from(DashboardActivity.this);
                             managerCompat.notify(1, builder.build());
                         }
-                    }, 10000);
+                    }, 50000);
                 }
             }
         });
