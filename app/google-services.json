@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958578602098",
+    "project_id": "icare-c98e3",
+    "storage_bucket": "icare-c98e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958578602098:android:684da0b6d67ed1ba1c52eb",
+        "android_client_info": {
+          "package_name": "devo.melodia.icare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958578602098-fhrdcu8la8khhk0tg1ap2iug33jol6tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcnwbnbd8KQAIBxOohit5JkhdvojN-3yA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958578602098-fhrdcu8la8khhk0tg1ap2iug33jol6tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

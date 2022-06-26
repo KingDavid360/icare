@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".NewActivity">
+
+    <Button
+        android:id="@+id/eyeDefectNextBtn"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cataractsFormBtn"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <Button
+        android:id="@+id/presbyopiaBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="PRESBYOPIA"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/astimagtismFormBtn" />
+
+
+    <Button
+        android:id="@+id/cataractsFormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="CATARACTS"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presbyopiaBtn" />
+
+    <Button
+        android:id="@+id/hypermyopiaFormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="HYPERMYOPIA"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myopiaFormBtn" />
+
+
+    <TextView
+        android:id="@+id/eyeDefectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="What is your eye defect?"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDefectBackbtn" />
+
+    <Button
+        android:id="@+id/myopiaFormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="MYOPIA"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDefectTextView" />
+
+    <Button
+        android:id="@+id/astimagtismFormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="ASTIGMAGTISM"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hypermyopiaFormBtn" />
+
+    <ImageView
+        android:id="@+id/eyeDefectBackbtn"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

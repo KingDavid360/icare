@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".NewActivity">
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_button"
+        android:enabled="false"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_58_67FormBtn"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <Button
+        android:id="@+id/_58_67FormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="ADULT"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_42_57FormBtn" />
+
+    <Button
+        android:id="@+id/_26_41FormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="11 - 15"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_10_25FormBtn" />
+
+    <TextView
+        android:id="@+id/letsGetStartedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Let's get started"
+        android:textAlignment="center"
+        android:textColor="@color/h1"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectAgeRangeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="select your age range"
+        android:textAlignment="center"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letsGetStartedTextView" />
+
+    <Button
+        android:id="@+id/_10_25FormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="5 - 10"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectAgeRangeTextView" />
+
+    <Button
+        android:id="@+id/_42_57FormBtn"
+        android:layout_width="322dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="16 - 17"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_26_41FormBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".NewActivity">
+
+    <ImageView
+        android:id="@+id/eyeDashboardImageView"
+        android:layout_width="177dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activateTextView"
+        app:srcCompat="@drawable/eye_background" />
+
+    <ImageView
+        android:id="@+id/settingImageView"
+        android:layout_width="46dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setting_btn" />
+
+    <TextView
+        android:id="@+id/activateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Tap to Activate icare"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingImageView" />
+
+    <ImageView
+        android:id="@+id/pathImageView"
+        android:layout_width="669dp"
+        android:layout_height="434dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDashboardImageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/path" />
+
+    <TextView
+        android:id="@+id/dailyTipsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Daily tips"
+        android:textColor="@color/h1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pathImageView" />
+
+    <TextView
+        android:id="@+id/eyeDistanceTipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Keep a proper viewing distance of 20-28 inches from your phone screen"
+        android:textAlignment="center"
+        android:textColor="@color/h1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyTipsTextView" />
+
+    <ImageView
+        android:id="@+id/eyeImageView"
+        android:layout_width="165dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eyeDashboardImageView"
+        app:layout_constraintEnd_toEndOf="@+id/eyeDashboardImageView"
+        app:layout_constraintStart_toStartOf="@+id/eyeDashboardImageView"
+        app:layout_constraintTop_toTopOf="@+id/eyeDashboardImageView"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/eye" />
+
+    <TextView
+        android:id="@+id/pleasantriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="HELLO "
+        android:textAlignment="center"
+        android:textColor="@color/h1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/settingImageView"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textColor="@color/h1"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/eyeDashboardImageView"
+        app:layout_constraintEnd_toEndOf="@+id/eyeDashboardImageView"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/eyeDashboardImageView"
+        app:layout_constraintTop_toTopOf="@+id/eyeDashboardImageView"
+        app:layout_constraintVertical_bias="0.206" />
+</androidx.constraintlayout.widget.ConstraintLayout>

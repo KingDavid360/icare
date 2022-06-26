@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".NewActivity">
+
+    <TextView
+        android:id="@+id/allSetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="You are all set!!!"
+        android:textColor="@color/h1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/allSetImage"
+        android:layout_width="285dp"
+        android:layout_height="443dp"
+        app:layout_constraintBottom_toTopOf="@+id/dashBoardBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allSetTextView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/set_image" />
+
+    <Button
+        android:id="@+id/dashBoardBtn"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="DASHBOARD"
+        android:textAllCaps="false"
+        android:textColor="@color/h1"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ageRangeTextView"
+        android:layout_width="224dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="216dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="age range"
+        android:textColor="@color/h1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/allSetImage"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/allSetTextView" />
+
+    <ImageView
+        android:id="@+id/ageRangePath"
+        android:layout_width="105dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="119dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ageRangeTextView"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/ageRangeTextView"
+        app:srcCompat="@drawable/path_image" />
+
+    <TextView
+        android:id="@+id/ageRangeValueTextView"
+        android:layout_width="218dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=""
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/allSetImage"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/ageRangePath" />
+
+    <TextView
+        android:id="@+id/eyeDefectTextView"
+        android:layout_width="224dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="eye defect"
+        android:textColor="@color/h1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/allSetImage"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/ageRangeValueTextView" />
+
+    <ImageView
+        android:id="@+id/eyeDefectPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eyeDefectTextView"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDefectTextView"
+        app:srcCompat="@drawable/path_image" />
+
+    <TextView
+        android:id="@+id/eyeDefectValueTextView"
+        android:layout_width="190dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=""
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/allSetImage"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/eyeDefectConfirmationTextView"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDefectPath" />
+
+    <TextView
+        android:id="@+id/eyeDefectConfirmationTextView"
+        android:layout_width="38dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=": "
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDefectTextView" />
+
+    <TextView
+        android:id="@+id/geneticEyeDefectTextView"
+        android:layout_width="224dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="genetic eye defect"
+        android:textColor="@color/h1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/allSetImage"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/eyeDefectValueTextView" />
+
+    <ImageView
+        android:id="@+id/geneticPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/geneticEyeDefectTextView"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/geneticEyeDefectTextView"
+        app:srcCompat="@drawable/path_image" />
+
+    <TextView
+        android:id="@+id/geneticEyeDefectValueTextView"
+        android:layout_width="190dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=""
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/allSetImage"
+        app:layout_constraintEnd_toEndOf="@+id/allSetImage"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toEndOf="@+id/geneticEyeDefectConfirmationTextView"
+        app:layout_constraintTop_toBottomOf="@+id/geneticEyeDefectTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/geneticEyeDefectConfirmationTextView"
+        android:layout_width="38dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=": "
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/allSetImage"
+        app:layout_constraintStart_toStartOf="@+id/allSetImage"
+        app:layout_constraintTop_toBottomOf="@+id/geneticEyeDefectTextView"
+        app:layout_constraintVertical_bias="0.041" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

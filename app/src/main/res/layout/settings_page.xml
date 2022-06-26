@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".NewActivity">
+
+    <ImageView
+        android:id="@+id/settingsBackBtn"
+        android:layout_width="58dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/settingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/h1"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toEndOf="@+id/settingsBackBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingsImage"
+        android:layout_width="298dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTextView"
+        app:srcCompat="@drawable/settings_picture" />
+
+    <ImageView
+        android:id="@+id/editCredentialRectangleSettings"
+        android:layout_width="325dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsImage"
+        app:srcCompat="@drawable/rectangle_image" />
+
+    <ImageView
+        android:id="@+id/forwardImage"
+        android:layout_width="19dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editCredentialRectangleSettings"
+        app:layout_constraintEnd_toEndOf="@+id/editCredentialRectangleSettings"
+        app:layout_constraintTop_toTopOf="@+id/editCredentialRectangleSettings"
+        app:srcCompat="@drawable/forwarrd_arrow" />
+
+    <TextView
+        android:id="@+id/editCredentialSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Edit credentials"
+        android:textColor="@color/h1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editCredentialRectangleSettings"
+        app:layout_constraintEnd_toStartOf="@+id/forwardImage"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="@+id/editCredentialRectangleSettings"
+        app:layout_constraintTop_toTopOf="@+id/editCredentialRectangleSettings"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <ImageView
+        android:id="@+id/notificationRectangleSettings"
+        android:layout_width="325dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCredentialRectangleSettings"
+        app:srcCompat="@drawable/rectangle_image" />
+
+    <TextView
+        android:id="@+id/notificationSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Notification"
+        android:textColor="@color/h1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notificationRectangleSettings"
+        app:layout_constraintEnd_toStartOf="@+id/notificationToggle"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="@+id/notificationRectangleSettings"
+        app:layout_constraintTop_toTopOf="@+id/notificationRectangleSettings"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <ImageView
+        android:id="@+id/dailyTipRectangleSettings"
+        android:layout_width="325dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationRectangleSettings"
+        app:srcCompat="@drawable/rectangle_image" />
+
+    <TextView
+        android:id="@+id/dailyTipsSettingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Daily tips"
+        android:textColor="@color/h1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyTipRectangleSettings"
+        app:layout_constraintEnd_toStartOf="@+id/dailyTipsToggle"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="@+id/dailyTipRectangleSettings"
+        app:layout_constraintTop_toTopOf="@+id/dailyTipRectangleSettings"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <Switch
+        android:id="@+id/notificationToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:minHeight="48dp"
+        android:text="Off"
+        android:textColor="@color/teal_200"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notificationRectangleSettings"
+        app:layout_constraintEnd_toEndOf="@+id/notificationRectangleSettings"
+        app:layout_constraintTop_toTopOf="@+id/notificationRectangleSettings"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Switch
+        android:id="@+id/dailyTipsToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:checked="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:minHeight="48dp"
+        android:text="On"
+        android:textColor="@color/teal_200"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyTipRectangleSettings"
+        app:layout_constraintEnd_toEndOf="@+id/dailyTipRectangleSettings"
+        app:layout_constraintTop_toTopOf="@+id/dailyTipRectangleSettings"
+        app:layout_constraintVertical_bias="0.552" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
